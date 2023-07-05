@@ -1,5 +1,5 @@
 # Wazuh SoC Bad Actor Detection
-## Windows Ticket Golden Ticket detection: 
+## Windows Ticket Golden Ticket, DCSync, Kerberoasting detection: 
 
 
 
