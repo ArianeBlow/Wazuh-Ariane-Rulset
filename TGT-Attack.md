@@ -1,22 +1,22 @@
-#Wazuh SoC Bad Actor Detection
-##Windows Ticket Golden Ticket detection: 
+# Wazuh SoC Bad Actor Detection
+## Windows Ticket Golden Ticket detection: 
 
 
 
-###Install sysmon (windows endpoint)
+### Install sysmon (windows endpoint)
 
 ```cmd
 .\sysmon.exe -i
 ```
 
-###Install wazuh agent
+### Install wazuh agent
 ```cmd
 .\wazuh.exe "wazuh server IP"
 ```
 
 
 
-###Sysmon config : 
+### Sysmon config : 
 (Edit : C:\Program Files (x86)\ossec-agent\ossec.conf)
 ```xml
 <ossec_config>
@@ -29,14 +29,14 @@
 
 
 
-###Restart service on host
+### Restart service on host
 ```
 Restart-Service -Name wazuh
 ```
 
 
 
-###Add rule on wazuh server : 
+### Add rule on wazuh server : 
 (Edit : /var/ossec/etc/rules/local_rules.xml)
 ```xml
 <group name="security_event, windows,">
@@ -85,7 +85,7 @@ Restart-Service -Name wazuh
 
 
 
-###Restart wazuh-manager
+### Restart wazuh-manager
 ```bash
 systemctl restart wazuh-manager
 ```
