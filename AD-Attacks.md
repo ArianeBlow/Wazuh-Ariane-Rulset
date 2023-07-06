@@ -1,5 +1,5 @@
 # Wazuh SoC Bad Actor Detection
-## Windows Ticket Golden Ticket, DCSync, Kerberoasting, Psexec Execution, Path The Hash, securelsa::logonpasswords dumping (mimikatz), AD passwords dumping (NTDS.dit) detection: 
+## Windows Ticket Golden Ticket, DCSync, Kerberoasting, Psexec Execution, Pass The Hash, securelsa::logonpasswords dumping (mimikatz), AD passwords dumping (NTDS.dit) detection: 
 
 
 
